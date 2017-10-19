@@ -17,15 +17,21 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+    <Checkbox v-model="single">Checkbox</Checkbox>
   </div>
 </template>
 
 <script>
+import Checkbox from 'iview/src/components/checkbox'
 export default {
   name: 'HelloWorld',
+  components: {
+    Checkbox
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      single: false
     }
   }
 }
