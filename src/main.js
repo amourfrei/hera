@@ -3,11 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
-import router from './router'
-import store from './store'
+import routes from './router'
+// import store from './store'
 import { routerMode } from './config/env'
+import './utils/rem'
 import FastClick from 'fastclick'
-import 'iview/dist/styles/iview.css'
 
 Vue.config.productionTip = false
 
